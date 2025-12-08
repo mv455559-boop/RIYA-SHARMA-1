@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Riya Sharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+
+<script>
+
+  !(function(f,b,e,v,n,t,s){
+
+    if(f.fbq) return; n=f.fbq=function(){n.callMethod?
+
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+    if(!f._fbq) f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+
+    n.queue=[]; t=b.createElement(e); t.async=!0;
+
+    t.src=v; s=b.getElementsByTagName(e)[0];
+
+    s.parentNode.insertBefore(t,s)
+
+  })(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '7999655544444'); 
+
+  fbq('track', 'PageView');
+
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+
+src="https://www.facebook.com/tr?id=7999655544444&ev=PageView&noscript=1" /></noscript>
+
+<style>
+
+*{ margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif; }
+
+body{
+
+  min-height:100vh;
+
+  display:flex;
+
+  align-items:center;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  text-align:center;
+
+  padding:20px;
+
+  background:linear-gradient(45deg,#0f172a,#081827,#0a2845,#004466,#0088cc);
+
+  background-size:400% 400%;
+
+  animation:grad 12s infinite;
+
+  color:#fff;
+
+}
+
+@keyframes grad{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+.container{
+
+  width:100%;
+
+  max-width:460px;
+
+  padding:30px 24px;
+
+  background:rgba(255,255,255,0.10);
+
+  border-radius:20px;
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,0.25);
+
+  box-shadow:0 0 35px rgba(0,0,0,0.4);
+
+}
+
+.logo{
+
+  width:130px; height:130px; border-radius:50%;
+
+  overflow:hidden; margin:0 auto;
+
+  border:3px solid #ffffff44;
+
+  box-shadow:0 0 25px rgba(255,255,255,0.35);
+
+}
+
+.logo img{width:100%; height:100%; object-fit:cover;}
+
+h1{margin-top:20px; font-size:40px; font-weight:800;}
+
+#typing {
+
+  font-size:18px;
+
+  margin-top:6px;
+
+  opacity:0.9;
+
+  min-height:28px;
+
+}
+
+.btn{
+
+  width:100%;
+
+  padding:18px;
+
+  margin-top:28px;
+
+  border:none;
+
+  font-size:18px;
+
+  font-weight:700;
+
+  border-radius:15px;
+
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+
+  color:#fff;
+
+  display:flex; justify-content:center; align-items:center;
+
+  gap:10px;
+
+  cursor:pointer;
+
+  box-shadow:0 0 30px rgba(0,136,204,0.8);
+
+  animation:pulse 1.6s infinite;
+
+}
+
+@keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+
+.btn:hover{opacity:.9; transform:translateY(-2px);}
+
+.feedback-box{
+
+  text-align:left;
+
+  margin-top:25px;
+
+  font-size:15px;
+
+  opacity:0.92;
+
+}
+
+.feedback-box h2{font-size:20px;margin-bottom:8px;}
+
+.review{
+
+  margin-bottom:10px;
+
+  background:rgba(255,255,255,0.10);
+
+  padding:10px 12px;
+
+  border-radius:10px;
+
+  border-left:4px solid #0088cc;
+
+}
+
+.name{font-weight:700;}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+
+    <img src="https://i.ibb.co/Xf41Zss7/IMG-20251208-WA0000.jpg" alt="Profile">
+
+  </div>
+
+  <h1>RIYA SHARMA</h1>
+
+  <div id="typing"></div>
+
+  <button id="joinBtn" class="btn">
+
+    <svg width="22" height="22" fill="white" viewBox="0 0 24 24"><path d="M21 3L3 10.5l4.5 1.5L8.2 19 12 14.5 20.5 21 21 3z"/></svg>
+
+    Join Telegram Channel
+
+  </button>
+
+  <div class="feedback-box">
+
+    <h2>What People Say 👇</h2>
+
+    <div class="review"><span class="name">Rahul Patel:</span> Amazing service, totally satisfied!</div>
+
+    <div class="review"><span class="name">Rohit Verma:</span> So friendly person, super supportive!</div>
+
+    <div class="review"><span class="name">Ankit Kumar Singh:</span> Trusted account guys 💯</div>
+
+    <div class="review"><span class="name">Anupama Singh:</span> Fast response & very helpful!</div>
+
+    <div class="review"><span class="name">Ramesh Nagar:</span> Excellent experience. Must recommended!</div>
+
+  </div>
+
+</div>
+
+<script>
+
+// Typing text effect
+
+const text = ["Trusted Account", "All Type Service", "Fast & Trusted Support", "Join Now 👇"];
+
+let index = 0, charIndex = 0;
+
+function typeEffect(){
+
+  document.getElementById("typing").innerText = text[index].substring(0,charIndex);
+
+  charIndex++;
+
+  if(charIndex > text[index].length){
+
+    setTimeout(()=>{charIndex = 0; index = (index+1)%text.length;},1200);
+
+  }
+
+  setTimeout(typeEffect,100);
+
+}
+
+typeEffect();
+
+// Telegram button event + redirect fix
+
+document.getElementById("joinBtn").addEventListener("click", function(){
+
+  fbq('track', 'Contact', {button:'JoinTelegramChannel'});
+
+  window.location.href = "https://t.me/+t4h1J3_LV0JmY2E1";
+
+});
+
+</script>
+
+</body>
+
+</html>
